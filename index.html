@@ -12,6 +12,7 @@
         font-family: 'Inter', sans-serif;
       }
     </style>
+    <!-- Removed importmap to prevent React version conflicts -->
   <script type="importmap">
 {
   "imports": {
@@ -29,7 +30,7 @@
 </head>
   <body class="bg-gray-50 text-gray-900">
     <div id="root"></div>
-    <!-- Vite Entry Point -->
-    <script type="module" src="/index.tsx"></script>
+    <!-- Vite Entry Point - Changed from /index.tsx to ./index.tsx for relative path support -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
