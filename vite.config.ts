@@ -13,7 +13,8 @@ export default defineConfig(({ mode }) => {
     define: {
       // Prevents "ReferenceError: process is not defined" in browser
       'process.env': {
-        API_KEY: JSON.stringify(env.API_KEY)
+        API_KEY: JSON.stringify(env.API_KEY),
+        NODE_ENV: JSON.stringify(mode)
       }
     }
   }
